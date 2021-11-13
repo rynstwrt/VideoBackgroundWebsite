@@ -1,0 +1,82 @@
+@font-face
+{
+    font-family: "Momcake";
+    src: url("fonts/MomcakeThin.otf") format("opentype");
+}
+
+@font-face
+{
+    font-family: "Momcake";
+    src: url("fonts/MomcakeBold.otf") format("opentype");
+    font-weight: bold;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+video
+{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1
+{
+    font-size: 4em;
+    font-family: "Momcake", sans-serif;
+    line-height: .6em;
+
+    span
+    {
+        font-weight: normal;
+        display: block;
+        line-height: 1.15em;
+    }
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+
+    li
+    {
+        a
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+
+            &:hover
+            {
+                text-decoration: underline;
+            }
+        }
+    }
+}
